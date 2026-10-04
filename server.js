@@ -14,7 +14,7 @@ const adminAuthRoute = require("./router/adminlogin");
 
 //let's tackle cors
 const corsOption = {
-  origin: ["http://localhost:5173", process.env.CLIENT_URL].filter(Boolean),
+  origin: ["http://localhost:5173", "https://codeveda-client.vercel.app"],
   methods: "GET,POST,PUT,DELETE,PATCH,HEAD",
   credentials: true,
 };
