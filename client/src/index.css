@@ -926,3 +926,82 @@ footer {
 .section-services .admin-service-card .card-details > p {
   opacity: 0.85;
 }
+
+/* ---------- phone fixes ---------- */
+@media (width <= 600px) {
+  h1 {
+    font-size: 3.6rem;
+  }
+
+  .container {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .grid {
+    gap: 3.2rem;
+  }
+
+  .grid-four-cols {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+  }
+
+  .section-analytics .grid .div1 {
+    border-right: none;
+    padding: 0;
+  }
+
+  .secondary-btn {
+    margin-left: 1.2rem;
+  }
+
+  /* contact form */
+  .section-contact .section-form form {
+    margin-right: 0;
+  }
+
+  .section-contact .section-form input,
+  .section-contact .section-form textarea {
+    width: 100%;
+  }
+
+  /* register and login */
+  .section-registration {
+    padding: 0 1.6rem;
+  }
+
+  .section-registration .registration-form .main-heading {
+    white-space: normal;
+  }
+
+  /* admin pages */
+  .admin-section-form {
+    margin-left: 0;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .admin-section-form form {
+    padding: 2rem;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  th,
+  td {
+    padding: 1.2rem;
+    width: auto;
+  }
+
+  /* service details */
+  .service-hero-text h1 {
+    font-size: 3rem;
+  }
+
+  .service-stats div {
+    min-width: 100%;
+  }
+}
