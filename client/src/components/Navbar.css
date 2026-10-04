@@ -1,12 +1,25 @@
-
-
 .container {
-     max-width: 140rem;
-     padding: 4.2rem 2.4rem;
-     display:flex;
-     justify-content:space-between;
+  max-width: 140rem;
+  padding: 4.2rem 2.4rem;
+  display: flex;
+  justify-content: space-between;
 }
-ul{
-    display: flex;
-    gap:3.2rem;
+
+ul {
+  display: flex;
+  gap: 3.2rem;
+}
+
+/* phone: stack things instead of squeezing them in a row */
+@media (width <= 800px) {
+  .container {
+    flex-direction: column;
+    gap: 2.4rem;
+    padding: 2.4rem 1.6rem;
+  }
+
+  ul {
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+  }
 }
