@@ -14,30 +14,40 @@ ul {
 @media (width <= 800px) {
   .container {
     flex-direction: column;
-    gap: 2.4rem;
-    padding: 2.4rem 1.6rem;
+    gap: 1.6rem;
+    padding: 1.6rem;
   }
 
-  ul {
-    flex-wrap: wrap;
-    gap: 1rem 2rem;
+  header {
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.12);
   }
 
   header .logo-brand a {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     font-weight: 700;
   }
 
   header nav ul {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    justify-content: space-between;
-    gap: 0.4rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  header nav ul li {
+    flex: 1 1 auto;
   }
 
   header nav ul li a {
     display: block;
-    padding: 1rem 0;
-    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.9rem 1.4rem;
+    font-size: 1.6rem;
+    border-radius: 0.8rem;
+    background-color: rgba(100, 108, 255, 0.12);
+  }
+
+  header nav ul li a.active {
+    background-color: var(--btn-color);
+    color: #fff;
   }
 }
