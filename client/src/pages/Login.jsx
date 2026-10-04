@@ -4,7 +4,7 @@ import { useAuth } from "../store/auth";
 import { toast } from 'react-toastify';
 
 
-const URL = "http://localhost:5000/api/auth/login";
+const URL = "http://https://codeveda-mernstack.vercel.app/api/auth/login";
 
 
 export const Login = () => {

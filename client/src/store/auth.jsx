@@ -10,7 +10,7 @@ export const AuthProvider = ({ children }) => {
   const [services, setServices] = useState([]);
   const authorizationToken = `Bearer ${token}`;
 
-     const API = import.meta.env.VITE_API_URL || "http://localhost:5000";
+     const API = import.meta.env.VITE_API_URL || "https://codeveda-mernstack.vercel.app";
   // const API = "https://api.thapatechnical.site";
  // const API = import.meta.env.VITE_APP_URI_API;
 

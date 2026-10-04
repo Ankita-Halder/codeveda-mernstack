@@ -17,8 +17,7 @@ export const AdminUpdate = () => {
   //   get single user data
   const getSingleUserData = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/api/admin/users/${params.id}`, {
-        method: "GET",
+      const response = await fetch(`https://codeveda-mernstack.vercel.app/api/admin/users/${params.id}`, {
         headers: {
           Authorization: authorizationToken,
         },
@@ -55,7 +54,7 @@ export const AdminUpdate = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/admin/users/update/${params.id}`,
+        `https://codeveda-mernstack.vercel.app/api/admin/users/update/${params.id}`,
         {
           method: "PATCH",
           headers: {
